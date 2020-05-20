@@ -1,0 +1,1015 @@
+* {
+	box-sizing: border-box;
+	
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+
+}
+
+
+/* =============== header ===========  */
+
+
+
+.logo {
+	padding-top: 1em;
+	text-align: center;	
+}	
+
+.logo img{
+	width: 200px;
+	height: 100px;
+}
+
+
+
+
+/* Navigation bar */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1; /* Sit on top */
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.5); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s;
+  padding-top: 60px;
+
+}
+
+.sidenav a {
+  padding: 8px 5px 5px 30px;
+  display: block;
+  transition: 0.3s;
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  font-family: 'Stylish', sans-serif;  
+}
+
+.sidenav a:hover {
+  color: red;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0px;
+  right: 25px;
+  font-size: 50px;
+  margin-left: 50px;
+}
+
+
+
+/* style the <hr> element */
+hr.new1{
+	margin-top: 0.5em;
+	width: 20%;
+}
+
+
+hr.new2 {
+	border-top: 1px solid white;
+	margin-bottom: 1em;
+	width: 10%;
+}
+
+
+
+/* typography */
+
+@font-face {
+	font-family: Benguiat Bold;
+	src: url('../asset/font/Benguiat Bold.ttf');
+}
+
+
+@font-face {
+	font-family: VCR_OSD_MONO_1;
+	src: url('../asset/font/VCR_OSD_MONO_1.001.ttf');
+}
+
+
+
+#countdown {
+	color: white;
+	text-align: center;
+	font-size: 1.5em;
+	font-family: VCR_OSD_MONO_1, san-serif;
+}
+
+.info h1 {
+	color: #CC1111;
+	text-align: center;
+	font-size: 4em;
+	margin-top: -0.3em;
+	font-family: Benguiat Bold, san-serif;
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+  	-moz-animation: glow 1s ease-in-out infinite alternate;
+  	animation: glow 1s ease-in-out infinite alternate;
+}
+
+.info h3 {
+	color: white;
+	text-align: center;
+	font-size: 1.8em;
+	font-family: VCR_OSD_MONO_1, san-serif;
+}
+
+
+.trailer a {
+	color: white;
+	font-family: 'Stylish', sans-serif;
+	font-size: 1em;
+}
+
+
+.trailer a:hover {
+	color: #CC1111;
+}
+
+
+.trailer {
+	text-align: center;
+	margin-top: 5em;
+	font-size: 1em;
+}
+
+
+.detail {
+	color: white;
+	text-align: center;
+	font-size: 0.8em;
+	margin-top: 5em;
+	padding-bottom : 5em;
+}
+
+
+.plot p {
+	color: white;
+	font-size: 1em;
+	text-align: left;
+	font-family: 'Stylish', sans-serif;	
+}
+
+
+.chapter ul {
+	color: white;
+	font-size: 1em;
+	text-align: center;
+	display: inline;
+	list-style-type: none;
+	font-family: 'Stylish', sans-serif;	
+}
+
+
+
+.plot h1, .chapter h1, #sec3 h1, h1{
+	color: white;
+	font-size: 1.3em;
+	text-align: center;
+	font-family: Benguiat Bold, san-serif;
+	-webkit-animation: glow 3s ease-in-out infinite alternate;
+  	-moz-animation: glow 3s ease-in-out infinite alternate;
+  	animation: glow 3s ease-in-out infinite alternate;
+}
+
+
+.plot, .chapter {
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-top: 1em;
+}
+
+
+p, h3{
+	color: white;
+	font-size: 1em;
+	font-family: 'Stylish', sans-serif;
+}
+
+
+li {
+	padding: 0.3em;
+}
+
+
+.column p {
+	font-size: 0.8em;
+	text-align: center;
+}
+
+
+
+.border a {
+	color: black;
+	font-size: 1em;
+	background-color: white;
+	font-family: Benguiat Bold, san-serif;
+	text-decoration: none;
+
+}
+
+
+.border a:hover {
+	color: #CC1111;
+}
+
+
+.netflixContainer a {
+	color: white;
+	font-family: 'Stylish', sans-serif;
+	text-decoration: none;
+}
+
+
+.netflixContainer a:hover {
+	/* color: #CC1111; */
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+
+.credit {
+	font-family : 'sans-serif';
+	font-size: 0.8em;
+}
+
+
+
+
+
+
+/* glowing effect */
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 30px #8D0300, 0 0 20px #8D0300, 0 0 40px #8D0300, 0 0 50px #8D0300;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 40px #CC1111, 0 0 30px #CC1111, 0 0 50px #DB0300, 0 0 60px #DB0300;
+  }
+}
+
+
+
+/* style background on each section */
+
+section#sec1 {
+	width:100%;
+	/* height: 667px; */
+	height: auto;
+	background-image: url("../asset/images/stranger-things-companion.png");
+	background-size: cover;
+	background-position: center;
+	padding: 1em;
+	margin: 0em;
+		
+}
+
+
+section#sec2 {
+	background-image: url("../asset/images/main poster 1.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment : fixed;
+	opacity: 1;
+	height: 1000px;
+	width: 100%;
+	padding-bottom: 1em;
+	padding-top: 1em;
+
+}
+
+
+section#sec3 {
+	background-color: black;
+	height: auto;
+	width: 100%;
+
+}
+
+
+section#sec4 {
+	background-color: black;
+}
+
+
+section#sec5 {
+	background-color: black;
+	height: auto;  /* 80em */
+	width: 100%;
+	padding-top: 3em;
+
+}
+
+
+
+.footer {
+	background-color: black;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	color: white;
+	padding: 1em;
+	
+}
+
+
+
+/* style the icons */
+.fa-instagram, .fa-facebook, .fa-twitter {
+	color: white;
+	padding: 0.1em;
+	font-size: 1.1em;
+}
+
+
+.fa-instagram:hover, .fa-facebook:hover, .fa-twitter:hover {
+	color: #CC1111;
+}
+
+
+.iconBar {
+	
+	position: fixed;
+	top: 1em;	
+	right: 0.5em;
+}
+
+
+
+
+/* Style the images */
+
+.hightlight img{
+	margin-left: 2em;
+	padding-top: 1em;
+	width: 15em; 
+	height: 15em;
+}
+
+
+img {
+	max-width: 100%;
+	height: auto;
+
+}
+
+
+
+.chapter {
+	width: 100%;
+}
+
+
+/* style the character container */
+
+.container {
+	width: 95%;
+	margin: 0 auto;
+	overflow: auto;
+	height: auto;
+}
+
+
+	/* three columns side by side */
+.column {
+	float: left;
+	width: 33.3%;
+	padding: 8px 15px;
+	margin-bottom: 1px;
+}
+
+
+/* fixed each character image size */
+.character {
+	width: 800px;
+	height: 200px;
+}
+
+
+
+/* effect for character images */
+.container img {
+	transition: all .2s ease-in-out;
+}
+
+.container:hover img {
+	opacity: .4;
+	transform: scale(.92);
+}
+
+.container img:hover {
+	opacity: 1;
+	transform: scale(1) rotate(2deg);
+	box-shadow: 0 0 8px white;
+}
+
+
+.row {
+	overflow: auto;
+	margin-bottom: 1em;
+
+}
+
+
+/* style the season box */	
+.box {
+	width: 100%;
+	margin:0 auto;
+	overflow: auto;
+	height: auto;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 2em;
+}
+	
+
+
+
+.seasonChapter {
+	text-align: center;
+	list-style-type: none;
+	padding-top: 1em;
+	font-size: 1em;
+	color: white;
+	font-family: 'Stylish', sans-serif;
+}
+
+
+
+
+/* style the border for season images */
+
+.border {
+	border: 2px solid white;
+	box-shadow: 0px 4px 4px 4px white;
+	max-width: 600px;
+	margin: auto;
+	text-align: center;
+	background-color: white;
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-top: 1em;
+	opacity: 0.7;
+}
+
+
+
+
+
+/* shaking effect for season images */
+
+.border:hover {
+	animation: shake 0.5s;  /* Start the shake animation and make the animation last for 0.5 seconds */
+	animation-iteration-count: infinite; /* When the animation is finished, start again */
+	opacity: 1;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+
+
+
+/* style the netflix logo and link */
+
+.netflixContainer img {
+	width: 60px;
+	height: 30px;
+	margin-bottom: 5em;
+}
+
+.netflixContainer {
+	text-align: center;
+	padding-bottom: 0;
+	
+}
+
+.trailerHeading {
+	padding-top: 5em;
+}
+
+
+.myStyle {
+	border : 2px solid #CC1111;
+	background-color: red;
+	padding : 1em;
+}
+
+
+/* style back to top button */
+
+.myBtn {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 10px;
+  z-index: 99;
+  font-size: 0.8em;
+  border: none;
+  outline: none;
+  background-color: black;
+  color:  white;
+  cursor: pointer;
+  padding: 0.2em;
+  border-radius: 8px;
+}
+
+.myBtn:hover {
+  color: #CC1111;
+}
+
+
+/* style the audio display */
+
+audio {
+	text-align: center;
+	width: 250px;
+	height: 25px;
+	margin-bottom: 1em;
+}
+
+
+#video {
+	width: 100%;
+	height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* display on bigger screen - small tablet */
+
+@media screen and (min-width: 700px) {
+	
+
+	section#sec1 {
+		width:100%;
+		/* height: 1150px; */
+		height: auto;
+		background-image: url("../asset/images/stranger-things-companion.png");
+		background-size: cover;
+		background-position: center;
+		padding: 1em;
+		margin: 0em;
+		
+	}
+	
+	section#sec2 {
+		height: 1300px;
+		width: 100%;
+	}
+
+
+
+	.sidenav {
+		padding-top: 100px; 
+	}
+
+	.sidenav a {
+		font-size: 1.3em;
+	}
+
+
+	.fa-instagram, .fa-facebook, .fa-twitter {
+		padding: 0.3em;
+		font-size: 1.5em;
+	}
+
+	.iconBar {
+		padding-bottom: 1em;
+	}
+
+
+	.plot h1, .chapter h1, #sec3 h1, h1{
+		font-size: 1.5em;
+		text-align: center;
+	}
+
+
+	.plot p, .chapter ul, .seasonChapter, .videoContent p {
+		font-size: 1.2em;
+	}
+
+
+	.info h1 {
+		font-size: 8em;
+	}
+
+	.info h3 {
+		font-size: 3em;
+	}
+
+	hr.new1{
+		margin-top: 0.2em;
+		width: 8%;
+	}
+
+	#countdown {
+		font-size: 2em;
+	}
+
+	.mainContainer {
+		margin-top: 6em;
+	}
+	
+
+	.logo img{
+		width: 400px;
+		height: 200px;
+	}
+
+
+	.plot {
+		float:left;
+		width: 100%;
+		height: auto;
+		padding-top: 3em;		
+	}
+
+
+
+	.chapter {
+		float :left;
+		width: 100%;
+		padding-top: 4em;
+		padding-right: 1em;
+	}
+
+
+
+	.plot p{
+		padding-top: 2em;
+		padding-left: 3em;
+		padding-right: 3em;
+
+	}
+
+
+	.chapter h1{
+		padding-top: 1em;
+	}
+
+
+	.trailer a {
+		font-size: 1.5em;
+	}
+
+
+	.detail {
+		font-size: 1em;
+		padding-bottom: 2em;
+	}
+
+
+	.column p {
+		font-size: 1em;
+		text-align: center;
+	}
+
+	.container {
+		padding-top: 2em;
+		text-align: center;
+	}
+
+
+	.seasonChapter p{
+		text-align: center;
+		padding-top: 1.3em;
+	}
+
+	.border {
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+
+	.border a {
+		font-size: 2em;
+	}
+
+
+	.netflixContainer a {
+		font-size: 1em;
+	}
+
+
+	.netflixContainer img {
+		width: 100px;
+		height: 30px;
+
+	}
+
+	.netflixContainer {
+		padding-top: 5em;
+	}
+
+	section#sec5 {
+		padding-bottom: 0;
+	}
+
+	.myBtn {
+		font-size: 1em;	
+		padding: 0.5em;
+    	border-radius: 10px
+	}
+
+
+
+	
+}
+
+
+
+
+/* desktop screen */
+
+@media screen and (min-width: 1200px) {
+	
+
+	section#sec1 {
+		width:100%;
+		height: auto;
+		background-image: url("../asset/images/stranger-things-companion.png");
+		background-size: cover;
+		background-position: center;
+			
+	}
+	
+	section#sec2 {
+		height: 1000px;
+		width: 100%;
+	}
+
+
+
+	.sidenav {
+		padding-top: 100px; 
+	}
+
+	.sidenav a {
+		font-size: 1.5em;
+	}
+
+
+	.fa-instagram, .fa-facebook, .fa-twitter {
+		padding: 0.3em;
+		font-size: 2.0em;
+	}
+
+	.iconBar {
+		padding-bottom: 1em;
+	}
+
+
+	.plot h1, .chapter h1, #sec3 h1, h1 {
+		font-size: 2em;
+		text-align: center;
+	}
+
+
+	.plot p, .chapter ul, .seasonChapter, .videoContent p {
+		font-size: 1.2em;
+	}
+
+
+	.info h1 {
+		font-size: 6em;
+	}
+
+	.info h3 {
+		font-size: 3em;
+	}
+
+	hr.new1 {
+		margin-top: 0.2em;
+		width: 8%;
+	}
+
+	#countdown {
+		font-size: 2em;
+	}
+
+	.mainContainer {
+		margin-top: 3em;
+	}
+	
+
+	.logo img {
+		width: 400px;
+		height: 200px;
+	}
+
+
+	.trailer a {
+		font-size: 1.5em;
+	}
+
+	.detail {
+		font-size: 1.5em;
+		margin-top: 2em;
+		padding-bottom: 1em;	
+	}
+
+
+	.plot {
+		width: 50%;
+		height: auto;
+		padding-top: 3em;		
+	}
+
+
+
+	.chapter {
+		width: 50%;
+		display: inline;
+		overflow: auto;
+		padding-top: 4em;
+		padding-right: 1em;
+	}
+
+
+
+	.plot p {
+		padding-top: 2em;
+		padding-left: 3em;
+		padding-right: 3em;
+
+	}
+
+
+	.story {
+		padding-top: 5em;
+	}
+
+	.colSeason {
+		width: 50%;
+		
+	}
+
+	.left {
+		float: left;
+	}
+
+
+	.right {
+		float: right;
+	}
+
+	.chapter h1 {
+		padding-top: 1em;
+	}
+
+	.container {
+		padding-top: 2em;
+		text-align: center;
+	}
+
+	.col4 {
+		float: left;
+		width: 33.3%;
+		padding: 10px;
+	}
+
+	.gap {
+		padding-left: 15em;
+		padding-right: 15em;
+	}
+
+	.column p {
+		font-size: 1.3em;
+		text-align: center;
+	}
+
+
+	.seasonChapter{
+		text-align: center;
+		padding-top: 2em;
+	}
+
+	.border {
+		width: 100%;
+	}
+
+	.border a {
+		font-size: 2em;
+	}
+
+
+	.netflixContainer a {
+		font-size: 1.5em;
+	}
+
+
+	.netflixContainer img {
+		width: 120px;
+		height: 50px;
+	}
+
+	.netflixContainer {
+		padding-top: 10em;
+	}
+
+
+	.myBtn {
+		font-size: 1em;	
+		padding: 0.5em;
+    	border-radius: 10px
+	}
+
+
+
+	
+}
+
+
+
+
+
+
+
+
+
+
+/* ================ reference ================= */
+
+
+.col1 {
+	width: 8.33%;
+}
+
+.col2 {
+	width: 16.66%; 
+}
+
+.col3 {
+	width: 25%;
+}
+
+.col4 {
+	width: 33.3%;
+}
+
+.col5 {
+	width: 41.66%;
+}
+
+.col6 {
+	width: 50%;
+}
+
+.col7 {
+	width: 58.33%;
+}
+
+.col8 {
+	width: 66.66%;
+}
+
+.col9 {
+	width: 75%;
+}
+
+.col10{
+	width: 83.33%;
+}
+
+.col11 {
+	width: 91.66%;
+}
+
+.col12 {
+	width: 100%;
+	float: left;
+}
